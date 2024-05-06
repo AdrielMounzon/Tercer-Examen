@@ -1,0 +1,13 @@
+sentry:
+  dsn: https://38a6c66895068eb62a8b898ceda6cafb@o4507101633642496.ingest.us.sentry.io/4507200231702528
+  # Set traces-sample-rate to 1.0 to capture 100% of transactions for performance monitoring.
+  # We recommend adjusting this value in production.
+  traces-sample-rate: 1.0
+server:
+  port: 8080
+
+springdoc:
+  swagger-ui.path: /openapi/swagger-ui.html
+  api-docs.path: /openapi/v3/api-docs
+  packagesToScan: org.example.prueba2
+  pathsToMatch: /**
