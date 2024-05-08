@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "cardNumber": {
+      "type": "string",
+      "pattern": "^[0-9]{16}$"
+    },
+    "cvv": {
+      "type": "string",
+      "pattern": "^[0-9]{3,4}$"
+    },
+    "expirationDate": {
+      "type": "string",
+      "pattern": "^(0[1-9]|1[0-2])/(20[2-9][0-9])$"
+    }
+  },
+  "required": ["cardNumber", "cvv", "expirationDate"]
+}
